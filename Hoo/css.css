@@ -25,8 +25,8 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
-
     margin: 0 20px;
+    box-sizing: border-box;
 }
 
 label {
@@ -38,7 +38,7 @@ label {
 input[type="text"],
 select {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -49,7 +49,7 @@ select {
 button {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
     border-radius: 4px;
     font-size: 1.1rem;
@@ -89,7 +89,7 @@ button:hover {
     }
 }
 
-
+/* Tablets (small desktops and large tablets) */
 @media (min-width: 601px) and (max-width: 1024px) {
     h1 {
         font-size: 1.8rem;
@@ -109,4 +109,26 @@ button:hover {
     #result {
         font-size: 1.1rem;
     }
+}
+
+a {
+    text-decoration: none;
+
+    width: 100%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+button:hover {
+    background-color: #45a049;
 }
