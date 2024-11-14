@@ -11,18 +11,26 @@
 <body>
     <div>
 
-        <form onsubmit="convertBinaryToText(event)">
+        <form>
             <label for="binaryInput">ປ້ອນເລກຖານ ເພື່ອແປງເປັນຂໍ້ຄວາມ:</label>
             <input type="text" id="binaryInput" required>
 
-            <label for="baseSelect">ກຳນົດຖານ:</label>
+            <label for="baseSelect">ກຳນົດຖາน:</label>
             <select id="baseSelect">
                 <option value="2">ຖານ 2 </option>
                 <option value="8">ຖານ 8 </option>
-                <option value="16">ຖານ 16 </option>
+                <option value="16">ຖາน 16 </option>
             </select><br><br>
 
-            <button type="submit">ກົດເພື່ອດູຜົນ</button>
+            <!-- ปรับปุ่มเป็นลิงก์ -->
+            <button type="submit">ກົດເພື່ອດູຜົນ</button><br><br>
+            <a href="https://my-2-8-16.onrender.com/">
+                <button>error</button>
+            </a>
+        </form>
+
+
+
         </form>
 
         <p id="result">ຂໍ້ຄວາມ: </p>
