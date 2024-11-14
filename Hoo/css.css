@@ -25,7 +25,7 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
-    margin: 0 20px;
+    margin: 1 20px;
     box-sizing: border-box;
 }
 
@@ -74,7 +74,7 @@ button:hover {
     }
 
     form {
-        width: 90%;
+        width: 100%;
     }
 
     label,
