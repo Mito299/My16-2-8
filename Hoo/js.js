@@ -8,8 +8,17 @@ function convertBinaryToText(event) {
 
     values.forEach(value => {
         const decimalValue = parseInt(value, base);
-        result += String.fromCharCode(decimalValue);
+        if (!isNaN(decimalValue)) {
+            result += String.fromCharCode(decimalValue);
+        } else {
+            result += '?';
+        }
     });
 
     document.getElementById('result').innerText = `ຂໍ້ຄວາມ: ${result}`;
+}
+
+function clearInput() {
+    document.getElementById('binaryInput').value = '';
+    document.getElementById('result').innerText = 'ຂໍ້ຄວາມ: ';
 }
